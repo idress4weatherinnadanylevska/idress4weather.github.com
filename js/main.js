@@ -4,7 +4,7 @@ $(function () {
 
   var coordinates = '';
   var url;
-  
+  var temperature_c[];
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
@@ -17,7 +17,7 @@ $(function () {
 async: false,
         success: function(data) {
 
-          var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
           $("#temp_unit_c").on('click', function(){
