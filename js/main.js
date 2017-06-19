@@ -58,11 +58,11 @@ tags: temperature_c,
             foundImages = foundImages + 1;
             return true;
         }
-    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
+    else if(image.tags.indexOf('2') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
         }
-    else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+    else if(image.tags.indexOf('2') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
         }    
