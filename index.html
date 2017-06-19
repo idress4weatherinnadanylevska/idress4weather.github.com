@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -29,6 +29,21 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" rel="stylesheet" />
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="js/main.js"></script>
+
+    <title>Current weather in your city | freeCodeCamp project</title>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -77,43 +92,35 @@
                         <!--h1 class="brand-heading">Grayscale</h1-->
                         <!--p class="intro-text">A free, responsive, one page Bootstrap theme.
                             <br>Created by Start Bootstrap.</p-->
-                        <script type="text/javascript" src="instafeed/instafeed.min.js"></script>    
-   <script type="text/javascript">
-var userFeed = new Instafeed({
-get: 'user',
-userId: '2321088784',
-accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
-    template: '<a href="{{link}}"><img src="{{image}}" /></a>',
-     limit: 60,
-    success: function() {
-        foundImages = 0;
-        maxImages = 5;
-    },
-    filter: function(image) {
-     //return image.tags.indexOf('25') >= 0;    
-     if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
-            foundImages = foundImages + 1;
-            return true;
-        }
-    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
-            foundImages = foundImages + 1;
-            return true;
-        }
-    else if(image.tags.indexOf('27') >= 0 && foundImages < maxImages) {
-            foundImages = foundImages + 1;
-            return true;
-        }    
-        return false;
-  }    
-
-});
-userFeed.run();    
-
-
-      
-</script>
+   <script type="text/javascript" src="instafeed/instafeed.min.js"></script>    
+   <script type="text/javascript"></script>
 <div id="instafeed"></div>
-                        <a href="#about" class="btn btn-circle page-scroll">
+    <div class="flex-parent">
+        <div class="flex-child">
+
+            <div id="city">
+                New York
+            </div>       
+
+            <div id="temp_c" class="temperature">
+                +25 <a id="temp_unit_c">C</a>
+            </div>      
+            <div id="temp_f" class="temperature">
+                0 <a id="temp_unit_f">F</a>
+            </div>                         
+
+            <img id="icon" src="images/icons/black/sunny.svg" />
+
+            <div id="weather">
+                Sunny
+            </div>        
+
+        </div>
+    </div>
+
+
+
+<a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
