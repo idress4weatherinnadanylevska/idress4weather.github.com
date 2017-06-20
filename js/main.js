@@ -4,7 +4,7 @@ $(function () {
 
   var coordinates = '';
   var url;
-  //var temperature_c[];
+  var temperature_c = '';
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
@@ -14,10 +14,10 @@ $(function () {
       // send request to the weather server
       $.ajax( {
         url: url,
-async: false,
+        async: false,
         success: function(data) {
 
-          var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
           $("#temp_unit_c").on('click', function(){
@@ -46,7 +46,7 @@ userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-
+async: false,
 tags: temperature_c,
     success: function() {
         foundImages = 0;
@@ -57,7 +57,14 @@ tags: temperature_c,
      if (image.tags.indexOf(temperature_c) >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
-       
+        }
+    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+        }
+    else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
         }    
         return false;
   }    
