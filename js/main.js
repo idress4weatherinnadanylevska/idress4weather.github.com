@@ -42,6 +42,20 @@ $(function () {
 
           $("#weather").html(data.current_observation.weather); 
 
+
+
+        },
+        cache: false
+      });       
+      
+    });
+  } 
+
+
+
+
+});
+
 //temperature_c = parseString(temperature_c);//+++++++++
 // запускаем функцию в будущее на 10 секунд
 window.setTimeout(function() {
@@ -85,15 +99,3 @@ userFeed.run();
  10000);
 
 //alert(my_superglobal); 
-
-        },
-        cache: false
-      });       
-      
-    });
-  } 
-
-
-
-
-});
