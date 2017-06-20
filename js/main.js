@@ -1,6 +1,6 @@
 $(function () {
 
-  var temperature_c = '';
+  //var temperature_c = '';
   
 // https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/49.5638034,34.4923746.json
 
