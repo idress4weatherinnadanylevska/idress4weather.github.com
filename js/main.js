@@ -4,7 +4,7 @@ $(function () {
 
   var coordinates = '';
   var url;
-  var temperature_c = '';
+  var temperature_c[];
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
@@ -40,6 +40,19 @@ $(function () {
 
           $("#weather").html(data.current_observation.weather); 
 
+
+
+
+
+        },
+        cache: false
+      });       
+      
+    });
+  }    
+
+
+
 var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
@@ -70,14 +83,5 @@ tags: temperature_c,
   }    
 });
 userFeed.run();
-
-
-
-        },
-        cache: false
-      });       
-      
-    });
-  }    
 
 });
