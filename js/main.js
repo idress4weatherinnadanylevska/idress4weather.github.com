@@ -1,6 +1,6 @@
 $(function () {
 
-  var temperature_c = 0;
+  //var temperature_c = 0;
   
 // https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/49.5638034,34.4923746.json
 
@@ -19,7 +19,7 @@ $(function () {
         //async: false,
         success: function(data) {
 
-          temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
           $("#temp_unit_c").on('click', function(){
