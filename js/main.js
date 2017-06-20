@@ -1,6 +1,6 @@
 $(function () {
 
-  //var temperature_c = 0;
+  var temperature_c = '';
   
 // https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/49.5638034,34.4923746.json
 
@@ -19,7 +19,7 @@ $(function () {
         //async: false,
         success: function(data) {
 
-          var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
           $("#temp_unit_c").on('click', function(){
@@ -44,7 +44,7 @@ $(function () {
 
 //temperature_c = parseString(temperature_c);//+++++++++
 // запускаем функцию в будущее на 10 секунд
-//window.setTimeout(function() {
+window.setTimeout(function() {
 var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
@@ -64,11 +64,9 @@ tags: temperature_c,
      if (image.tags.indexOf(temperature_c) >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
-           
+            //alert(temperature_c);
         }
-        
-
-
+  
     //else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
       //      foundImages = foundImages + 1;
         //    return true;
@@ -79,14 +77,14 @@ tags: temperature_c,
         //} 
 
         return false;
-         //alert(temperature_c);
-  } 
+    } 
 
-  10000);
-  //alert(my_superglobal);    
 });
 userFeed.run();
+},
+ 10000);
 
+//alert(my_superglobal); 
 
         },
         cache: false
