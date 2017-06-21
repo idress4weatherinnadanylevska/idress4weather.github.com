@@ -6,7 +6,7 @@ $(function () {
 
   var coordinates = '';
   var url;
-  
+  var temperature_c = '';
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
@@ -20,7 +20,7 @@ $(function () {
         url: url,
         success: function api(data) {
 
-          vartemperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
           $("#temp_unit_c").on('click', function(){
@@ -68,12 +68,18 @@ tags: new Tags(temperature_c),
         foundImages = 0;
         maxImages = 5;
     },
+        // запускаем функцию в будущее на 10 секунд
+window.setTimeout(function() { 
     filter: function(image) {
      //return image.tags.indexOf('25') >= 0;    
      if (image.tags.indexOf(temperature_c) >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
-        }
+        }alert(temperature_c);
+  } 
+
+  10000);
+  alert(temperature_c);
     else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
