@@ -19,15 +19,22 @@ $(function () {
      
         url: url,
         success: function api(data) {
-          var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+
+          vartemperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
- return new Tags(temperature_c);
-  
+          $("#temp_unit_c").on('click', function(){
+            $("#temp_c").toggle();
+            $("#temp_f").toggle();
+          });
 
-         
-
-                
+          var temperature_f = data.current_observation.temp_f + " <a id='temp_unit_f'>F</a>"
+          $("#temp_f").html(temperature_f);
+//on naznachenie 1 i bolshe callback dlya odnogo i togoge sobytia sobytiy
+          $("#temp_unit_f").on('click', function(){
+            $("#temp_c").toggle();
+            $("#temp_f").toggle();
+          });          
 
           $("#city").html(data.current_observation.observation_location.city);          
 
@@ -41,7 +48,7 @@ $(function () {
 
 
 
-
+ return new Tags(temperature_c);
         },
 
 
