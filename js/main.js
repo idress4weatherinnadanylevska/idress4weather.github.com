@@ -6,13 +6,13 @@ $(function () {
 
   var coordinates = '';
   var url;
-  var temperature_c = '';
+ 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
       
       url = 'https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/' + coordinates + '.json'     
-  
+   var temperature_c = '';
   $.ajax({
       // send request to the weather server
       //$.ajax( {
