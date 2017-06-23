@@ -1,0 +1,99 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+         <script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous">
+    </script>
+        
+        <!--styli dla widgeta  id dla javascript-->
+        <style type="text/css">
+   
+            body, html, body * {
+                margin: 0;
+                padding: 0;
+            }
+            .wbd-widget, wbd-widget * {
+                box-sizing: border-box;
+                font-family: Ubuntu;
+	}
+            .wbd-widget{
+                border: solid 1px #333;
+                padding: 20px;
+                color: black;
+            }    
+            .wbd-widget_info{
+                font-size: 16px;
+                color: black;
+                text-align: center;
+		}
+            .weather-wisget_form-label{
+                display: block;
+                line-height: 30px;
+            }
+        </style>   
+   
+    </head>
+    <body>
+    <!--html razmetkadlawidg-->
+        <div class="wbd-widget">
+            <div class="wbd-widget_info">
+                
+            <span id="wbd-widget-temperature"></span>*C
+            </div>
+
+            <div id="instafeed"></div>
+            <!--label class="wbd-widget_form-label">
+                Your   city
+                <select id="wbd-widget-city" class="wbd-widget_form-select">
+                    <option value="37" selected="">Kyiv</option>
+                    <option value="69" selected="">Poltava</option>
+                </select>
+            </label-->
+            <label class="wbd-widget_form-label">
+            <!--input type="submit" id="wbd-widget-update" class="wbd-widget_form-submit" value="update"-->
+            </label>
+        </div>    
+         <script type="text/javascript" charset="UTF-8">
+          <script type="text/javascript" src="instafeed/instafeed.min.js"></script>    
+   <script type="text/javascript">
+
+         var userFeed = new Instafeed({
+get: 'user',
+userId: '2321088784',
+accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
+    template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+     limit: 60,
+     //tags: something,
+    //data: {access_token: tok, count: kolichestvo},//+++++++++++
+    success: function() {
+        foundImages = 0;
+        maxImages = 5;
+    },
+    filter: function(image) {
+        if(something == '21'){
+          // return image.tags.indexOf('25') >= 0;
+       
+          if (image.tags.indexOf('21') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+          }
+    
+               return false;
+       }//if    
+  }    
+
+});
+userFeed.run(); 
+</script>
+   
+    </body>  
+</html>
