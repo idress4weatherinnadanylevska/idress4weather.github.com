@@ -10,13 +10,13 @@ $(function () {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
       
       url = 'https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/' + coordinates + '.json'     
-       var temperature_c = '';
+       
       // send request to the weather server
       $.ajax( {
         url: url,
         success: function(data) {
 
-          temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
           $("#temp_c").html(temperature_c);
 
           $("#temp_unit_c").on('click', function(){
