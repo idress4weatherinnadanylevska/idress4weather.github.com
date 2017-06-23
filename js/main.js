@@ -1,12 +1,14 @@
-$(function api() {
 
+$(function() {
+function ajaxRequest() {
+  var temperature_c = false;
   
   
 // https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/49.5638034,34.4923746.json
 
   var coordinates = '';
   var url;
-  var temperature_c = '';
+ 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
@@ -18,40 +20,34 @@ $(function api() {
       //$.ajax( {
      
         url: url,
+      async: false,
         success: function(data) {
-          temperature_c = data.current_observation.temp_c; 
+         temperature_c = data.current_observation.temp_c; 
           //$("#temp_c").html(temperature_c);
 
-         });//succ
-
-          
-
+         },
         cache: false
-      });//ajax       
-      
+      });       
+      return temperature_c;
     });
+  }    
+var something = ajaxRequest();
 
-    
-
-  }//if
-  return temperature_c;
-});
+ 
 
 
 
 
+window.setTimeout(function() {      
 
-var userFeed = new Instafeed({
+      var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
 //async: false,
-beforeSend: api,
-
-tags: api,
-
+tags: something,
     success: function() {
         foundImages = 0;
         maxImages = 5;
@@ -63,23 +59,24 @@ tags: api,
      //else if(c == '24'){ 
      //return image.tags.indexOf('24') >= 0;}
      //else if(c == '23'){ 
-     //return image.tags.indexOf('23') >= 0;}     
-     if (image.tags.indexOf(api) >= 0 && foundImages < maxImages) {
+     //return image.tags.indexOf('23') >= 0;}   
+     if (image.tags.indexOf(something) >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
         }
-    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
-            foundImages = foundImages + 1;
-            return true;
-        }
-    else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
-            foundImages = foundImages + 1;
-            return true;
-        }    
-        return false;
-         //alert(temperature_c);
+    
+               return false;
+             
+});//user
+//alert(temperature_c);
   } 
 
   10000);
-  //alert(my_superglobal);    
-});//user
+  //alert(my_superglobal);
+userFeed.run();
+//bo object
+//$("#instafeed").html(userFeed);
+
+
+  
+});//$func  
