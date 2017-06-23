@@ -41,7 +41,7 @@ $(function () {
           
           var temperature = data.current_observation.temp_c;  
           //alert(temperature);
-         window.setTimeout(function() {
+         //window.setTimeout(function() {
     
         var userFeed = new Instafeed({
 get: 'user',
@@ -84,8 +84,7 @@ tags: temperature,
 }); 
 userFeed.run(); 
           //alert(temperature);
-}, 
-10000);
+//},10000);
 // alert(temperature);
 
 
