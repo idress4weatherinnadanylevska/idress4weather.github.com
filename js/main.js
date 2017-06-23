@@ -31,6 +31,7 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
      tags: something,
+     cache: false
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
     success: function() {
         foundImages = 0;
@@ -38,7 +39,13 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     },
     filter: function(image) {
         
-           return image.tags.indexOf('tags') >= 0;               
+            if (image.tags.indexOf('tags') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+            }
+    
+            return false;
+       }               
   }    
 
 });
@@ -49,7 +56,7 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
   } 
   
 
-}); 
+});
 //           var temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
 //           $("#temp_c").html(temperature_c);
 
