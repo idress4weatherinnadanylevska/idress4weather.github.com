@@ -39,16 +39,18 @@ $(function () {
 
           $("#weather").html(data.current_observation.weather); 
           
-                 
+          var temperature = data.current_observation.temp_c;  
+          alert(temperature);
          window.setTimeout(function() {
-    alert(temperature_c);   
+    alert(temperature);   
         var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-tags: temperature_c,            
+tags: temperature, 
+          
             
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
     success: function() {
