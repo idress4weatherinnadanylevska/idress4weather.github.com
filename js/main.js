@@ -44,10 +44,10 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
         maxImages = 5;
     },
     filter: function(image) {
-        if(something == '21'){
+        if(something == '23'){
           // return image.tags.indexOf('25') >= 0;
        
-          if (image.tags.indexOf('21') >= 0 && foundImages < maxImages) {
+          if (image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
           }
