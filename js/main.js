@@ -27,10 +27,11 @@ var temperature_c = false;
   return temperature_c; 
 
   }//
-      
+  alert(temperature_c);    
 var something = ajaxRequest();
-alert(ajaxRequest());
+//
 var userFeed = new Instafeed({
+  something,
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
