@@ -66,32 +66,44 @@
           <script type="text/javascript" src="instafeed.min.js"></script>    
    <script type="text/javascript">
 
-         var userFeed = new Instafeed({
+                var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-     //tags: something,
+//tags: temp_c,            
+            
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
     success: function() {
         foundImages = 0;
         maxImages = 5;
     },
     filter: function(image) {
-        //if(something == '21'){
-                     // return image.tags.indexOf('25') >= 0;
-       
-          if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+        
+         //return image.tags.indexOf('TAG1') >= 0 && image.tags.indexOf('TAG2') >= 0;
+     //return image.tags.indexOf('25') >= 0;
+        
+       // str.indexOf(searchValue[, fromIndex])
+        //var image.tags = ['25'];
+        //var temperature_c1 = data.current_observation.temp_c1;+++++++++
+        //==data.current_observation.temp_c1+++++++++++++++++++++
+     if (image.tags.indexOf(temp_c) >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
-          }
-    
-               return false;
-       }//if    
+        }
+    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+        }
+    else if(image.tags.indexOf('27') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+        }    
+        return false;
   }    
 
-});
+}); 
 userFeed.run(); 
 </script>
    
