@@ -42,7 +42,7 @@ $(function () {
           var temperature = data.current_observation.temp_c;  
           alert(temperature);
          window.setTimeout(function() {
-    alert(temperature);   
+    
         var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
@@ -83,11 +83,11 @@ tags: temperature,
 
 }); 
 userFeed.run(); 
-          alert(temperature_c);
+          alert(temperature);
 }, 
 10000);
 
-alert(temperature_c); 
+alert(temperature); 
 
         },
         cache: false
