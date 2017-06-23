@@ -40,8 +40,11 @@ $(function() {
 }); 
  
   return temperature_c; 
+    alert(temperature_c);
   }    
 var something = ajaxRequest();
+alert(something);
+ 
 
 var userFeed = new Instafeed({
 get: 'user',
