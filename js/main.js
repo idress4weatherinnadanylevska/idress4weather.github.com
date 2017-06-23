@@ -57,15 +57,9 @@ tags: temperature,
         foundImages = 0;
         maxImages = 5;
     },
-    filter: function(image) {
+    filter: function(image, temperature) {
         
-         //return image.tags.indexOf('TAG1') >= 0 && image.tags.indexOf('TAG2') >= 0;
-     //return image.tags.indexOf('25') >= 0;
         
-       // str.indexOf(searchValue[, fromIndex])
-        //var image.tags = ['25'];
-        //var temperature_c1 = data.current_observation.temp_c1;+++++++++
-        //==data.current_observation.temp_c1+++++++++++++++++++++
      if (image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
