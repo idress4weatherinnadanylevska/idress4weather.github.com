@@ -15,7 +15,13 @@ var temperature_c = false;
         url: url,
         async: false,
         success: function(data) {
-         temperature_c = data.current_observation.temp_c;
+         temperature_c = data.current_observation.temp_c + " <a id='temp_unit_c'>C</a>"
+          $("#temp_c").html(temperature_c);
+
+          $("#temp_unit_c").on('click', function(){
+            $("#temp_c").toggle();
+            $("#temp_f").toggle();
+          });
           
         },
         cache: false
