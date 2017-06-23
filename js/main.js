@@ -57,15 +57,232 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     },
           window.setTimeout(function() {
     filter: function(image) {
-        
-         //return image.tags.indexOf('TAG1') >= 0 && image.tags.indexOf('TAG2') >= 0;
-     //return image.tags.indexOf('25') >= 0;
-        
-       // str.indexOf(searchValue[, fromIndex])
-        //var image.tags = ['25'];
-        //var temperature_c1 = data.current_observation.temp_c1;+++++++++
-        //==data.current_observation.temp_c1+++++++++++++++++++++
-      if(c == '25'){
+     if(c == '40'){
+     if (image.tags.indexOf('40') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+                                           
+     else if(c == '39'){
+     if (image.tags.indexOf('39') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                               
+                                         
+     else if(c == '38'){
+     if (image.tags.indexOf('38') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                 
+                                           
+     else if(c == '37'){
+     if (image.tags.indexOf('37') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}               
+                                      
+     else if(c == '36'){
+     if (image.tags.indexOf('36') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                    
+                                     
+     else if(c == '35'){
+     if (image.tags.indexOf('35') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}    
+                                     
+     else if(c == '34'){
+     if (image.tags.indexOf('34') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+                                     
+     else if(c == '33'){
+     if (image.tags.indexOf('33') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                     
+                                     
+     else if(c == '32'){
+     if (image.tags.indexOf('32') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}      
+                                          
+     else if(c == '31'){
+     if (image.tags.indexOf('31') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                  
+                                     
+     else if(c == '30'){
+     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                               
+                                     
+     else if(c == '29'){
+     if (image.tags.indexOf('29') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                   
+                                       
+     else if(c == '28'){
+     if (image.tags.indexOf('28') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                   
+                                     
+     else if(c == '27'){
+     if (image.tags.indexOf('27') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                     
+                                     
+     else if(c == '26'){
+     if (image.tags.indexOf('26') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}                                     
+                                     
+     else if(c == '25'){
      if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
@@ -79,7 +296,853 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 //             return true;
 //         }    
         return false;}
-  }  
+          
+     else if(c == '24'){
+     if (image.tags.indexOf('24') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+               else if(c == '23'){
+     if (image.tags.indexOf('23') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '22'){
+     if (image.tags.indexOf('22') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '21'){
+     if (image.tags.indexOf('21') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '20'){
+     if (image.tags.indexOf('20') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '19'){
+     if (image.tags.indexOf('19') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '18'){
+     if (image.tags.indexOf('18') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '17'){
+     if (image.tags.indexOf('17') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '16'){
+     if (image.tags.indexOf('16') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '15'){
+     if (image.tags.indexOf('15') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '14'){
+     if (image.tags.indexOf('14') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '13'){
+     if (image.tags.indexOf('13') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '12'){
+     if (image.tags.indexOf('12') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '11'){
+     if (image.tags.indexOf('11') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '10'){
+     if (image.tags.indexOf('10') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '9'){
+     if (image.tags.indexOf('9') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '8'){
+     if (image.tags.indexOf('8') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '7'){
+     if (image.tags.indexOf('7') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '6'){
+     if (image.tags.indexOf('6') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '5'){
+     if (image.tags.indexOf('5') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '4'){
+     if (image.tags.indexOf('4') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '3'){
+     if (image.tags.indexOf('3') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '2'){
+     if (image.tags.indexOf('2') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '1'){
+     if (image.tags.indexOf('1') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '0'){
+     if (image.tags.indexOf('0') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-1'){
+     if (image.tags.indexOf('-1') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-2'){
+     if (image.tags.indexOf('-2') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-3'){
+     if (image.tags.indexOf('-3') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-4'){
+     if (image.tags.indexOf('4') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-5'){
+     if (image.tags.indexOf('-5') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-6'){
+     if (image.tags.indexOf('-6') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-7'){
+     if (image.tags.indexOf('-7') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-8'){
+     if (image.tags.indexOf('-8') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-9'){
+     if (image.tags.indexOf('-9') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-10'){
+     if (image.tags.indexOf('-10') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-11'){
+     if (image.tags.indexOf('-11') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+          
+               else if(c == '-12'){
+     if (image.tags.indexOf('-12') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-13'){
+     if (image.tags.indexOf('-13') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-14'){
+     if (image.tags.indexOf('-14') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-15'){
+     if (image.tags.indexOf('-15') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-16'){
+     if (image.tags.indexOf('-16') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-17'){
+     if (image.tags.indexOf('-17') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-18'){
+     if (image.tags.indexOf('-18') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+               else if(c == '-19'){
+     if (image.tags.indexOf('-19') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-20'){
+     if (image.tags.indexOf('-20') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-21'){
+     if (image.tags.indexOf('-21') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-22'){
+     if (image.tags.indexOf('-22') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-23'){
+     if (image.tags.indexOf('-23') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-24'){
+     if (image.tags.indexOf('-24') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-25'){
+     if (image.tags.indexOf('-25') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-26'){
+     if (image.tags.indexOf('-26') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-26'){
+     if (image.tags.indexOf('-26') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-27'){
+     if (image.tags.indexOf('-27') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-28'){
+     if (image.tags.indexOf('-28') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-29'){
+     if (image.tags.indexOf('-29') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+                         else if(c == '-30'){
+     if (image.tags.indexOf('-30') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+          
+          
+          
+          
+          
+          
+  }//succ  
                                      }, 10000);
 
 }); 
