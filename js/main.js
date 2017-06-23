@@ -40,7 +40,7 @@ $(function () {
           $("#weather").html(data.current_observation.weather); 
           
           var temperature = data.current_observation.temp_c;  
-          alert(temperature);
+          //alert(temperature);
          window.setTimeout(function() {
     
         var userFeed = new Instafeed({
@@ -70,7 +70,7 @@ tags: temperature,
             foundImages = foundImages + 1;
             return true;
         }
-    else if(image.tags.indexOf('2') >= 0 && foundImages < maxImages) {
+    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
         }
@@ -83,10 +83,10 @@ tags: temperature,
 
 }); 
 userFeed.run(); 
-          alert(temperature);
+          //alert(temperature);
 }, 
 10000);
-
+// alert(temperature);
 
 
         },
