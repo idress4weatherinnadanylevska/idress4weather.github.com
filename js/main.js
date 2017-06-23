@@ -1,11 +1,4 @@
 $(function() {
-function ajaxRequest() {
-var temperature_c = false;
-$(function() {
-  
-  
-  
-  
 // https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/49.5638034,34.4923746.json
 
   var coordinates = '';
@@ -16,36 +9,26 @@ $(function() {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
       
       url = 'https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/' + coordinates + '.json'     
-    
+function ajaxRequest() {
+var temperature_c = false;
    $.ajax({
       // send request to the weather server
       //$.ajax( {
      
         url: url,
-      async: false,
+        async: false,
         success: function(data) {
          temperature_c = data.current_observation.temp_c;
           
-
-          
-
                },
         cache: false
       });       
       
-    });
-  } 
-  
+   
 
-}); 
- 
-  return temperature_c; 
-    alert(temperature_c);
-  }    
+  }//
 var something = ajaxRequest();
-alert(something);
- 
-
+alert('something');
 var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
@@ -73,8 +56,15 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 
 });
 userFeed.run(); 
-    
- });      
+
+
+    });
+  } 
+  
+
+}); 
+ 
+       
 
 
 
