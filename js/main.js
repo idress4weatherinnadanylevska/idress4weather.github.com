@@ -29,7 +29,7 @@ var temperature_c = false;
   }//
       
 var something = ajaxRequest();
-alert(something);
+alert(ajaxRequest());
 var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
