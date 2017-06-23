@@ -24,7 +24,7 @@ var temperature_c = false;
         cache: false
       });       
       
-   
+  return temperature_c; 
 
   }//
 var something = ajaxRequest();
