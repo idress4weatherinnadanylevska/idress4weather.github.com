@@ -55,6 +55,7 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
         foundImages = 0;
         maxImages = 5;
     },
+          window.setTimeout(function() {
     filter: function(image) {
         
          //return image.tags.indexOf('TAG1') >= 0 && image.tags.indexOf('TAG2') >= 0;
@@ -78,7 +79,8 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 //             return true;
 //         }    
         return false;}
-  }    
+  }  
+                                     }, 10000);
 
 }); 
 userFeed.run(); 
