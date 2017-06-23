@@ -40,14 +40,15 @@ $(function () {
           $("#weather").html(data.current_observation.weather); 
           
                  
-            
+         window.setTimeout(function() {
+    alert(temperature_c);   
         var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-//tags: temp_c,            
+tags: temperature_c,            
             
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
     success: function() {
@@ -63,15 +64,15 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
         //var image.tags = ['25'];
         //var temperature_c1 = data.current_observation.temp_c1;+++++++++
         //==data.current_observation.temp_c1+++++++++++++++++++++
-     if (image.tags.indexOf(temp_c) >= 0 && foundImages < maxImages) {//++++
+     if (image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
         }
-    else if(image.tags.indexOf('23') >= 0 && foundImages < maxImages) {
+    else if(image.tags.indexOf('2') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
         }
-    else if(image.tags.indexOf('27') >= 0 && foundImages < maxImages) {
+    else if(image.tags.indexOf('2') >= 0 && foundImages < maxImages) {
             foundImages = foundImages + 1;
             return true;
         }    
@@ -80,6 +81,11 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 
 }); 
 userFeed.run(); 
+          alert(temperature_c);
+}, 
+10000);
+
+alert(temperature_c); 
 
         },
         cache: false
