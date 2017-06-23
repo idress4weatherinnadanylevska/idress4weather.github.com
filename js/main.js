@@ -38,6 +38,33 @@ $(function () {
           $( "#icon" ).attr( "src", iconSrc );
 
           $("#weather").html(data.current_observation.weather); 
+          
+                   var userFeed = new Instafeed({
+get: 'user',
+userId: '2321088784',
+accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
+    template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+     limit: 60,
+     //tags: something,
+    //data: {access_token: tok, count: kolichestvo},//+++++++++++
+    success: function() {
+        foundImages = 0;
+        maxImages = 5;
+    },
+    filter: function(image) {
+        //if(something == '21'){
+                     // return image.tags.indexOf('25') >= 0;
+       
+          if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+          }
+    
+               return false;
+       }//if    
+  }    
+});
+userFeed.run(); 
 
         },
         cache: false
