@@ -87,7 +87,7 @@ userFeed.run();
 }, 
 10000);
 
-alert(temperature); 
+
 
         },
         cache: false
