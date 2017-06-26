@@ -85,7 +85,7 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 //         }    
         return false;}
   }  
-                                  }, 10000);
+                                  }, 1000);
 
 }); 
 userFeed.run(); 
