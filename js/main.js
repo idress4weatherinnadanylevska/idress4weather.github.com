@@ -42,7 +42,7 @@ $(function () {
           
                  
          var c = data.current_observation.temp_c;  
-         var f = data.current_observation.temp_f;   
+         //var f = data.current_observation.temp_f;   
         var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
