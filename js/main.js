@@ -39,6 +39,8 @@ $(function () {
           $( "#icon" ).attr( "src", iconSrc );
 
           $("#weather").html(data.current_observation.weather); 
+
+
           
                  
 //          var c = data.current_observation.temp_c;  
@@ -1911,12 +1913,12 @@ $(function () {
 // }); 
 // userFeed.run(); 
 
-        },
+         },
         cache: false
       });       
       
     });
   }    
 
-}); 
+});
 
