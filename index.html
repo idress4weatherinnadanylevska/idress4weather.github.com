@@ -52,7 +52,10 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<script>
+    window.opener.instaJS.oauthCallback(window.location.href);
+    window.close();
+</script>
 <button class="btn btn-block" onclick="login()">Login with Instagram</button>
 <hr/>
 
