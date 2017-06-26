@@ -70,7 +70,7 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
      
           
 else if(c == '28'||f == '28'){
-     if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
+     if (image.tags.indexOf('28') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
          }
