@@ -57,11 +57,11 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
          // window.setTimeout(function() {
     filter: function(image) {
         
-     if(c == '29'||f == '37'){if (image.tags.indexOf('29') >= 0 && foundImages < maxImages) {foundImages = foundImages + 1;return true; } return false;
+     if(c == '37'||f == '37'){if (image.tags.indexOf('37') >= 0 && foundImages < maxImages) {foundImages = foundImages + 1;return true; } return false;
        }//++++
 
-     else if(c == '29'){
-     if (image.tags.indexOf('29') >= 0 && foundImages < maxImages) {//++++
+     else (c == '30'){
+     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
          }
