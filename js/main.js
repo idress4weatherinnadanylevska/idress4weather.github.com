@@ -56,42 +56,42 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     },
           //window.setTimeout(function() {
     filter: function(image) {
-//   if (c == '25') {
-//     if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) foundImages = foundImages + 1;
+  if (c == '25') {
+    if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) foundImages = foundImages + 1;
 
 
-// return true;
-//     else
+return true;
+    else
 
-// return false;
-//   }
-//   else if (c == '30'){
-//     if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) foundImages = foundImages + 1;
-
-
-// return true;
-//     else
-
-// return false;
+return false;
+  }
+  else if (c == '30'){
+    if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) foundImages = foundImages + 1;
 
 
-//   }
+return true;
+    else
+
+return false;
+
+
+  }
       
-      if(c == '30'){
-         if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
-            foundImages = foundImages + 1;
-            return true;
-         }
-//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//       if(c == '30'){
+//          if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
 //             foundImages = foundImages + 1;
 //             return true;
-//         }
-//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
-//             foundImages = foundImages + 1;
-//             return true;
-//         }    
-        return false;
-      }
+//          }
+// //     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+// //             foundImages = foundImages + 1;
+// //             return true;
+// //         }
+// //     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+// //             foundImages = foundImages + 1;
+// //             return true;
+// //         }    
+//         return false;
+//       }
   }  //filter
                                   //   }, 10000);
 
