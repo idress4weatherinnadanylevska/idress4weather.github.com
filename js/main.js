@@ -60,8 +60,8 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 //      if(c == '37'||f == '37'){if (image.tags.indexOf('37') >= 0 && foundImages < maxImages) {foundImages = foundImages + 1;return true; } return false;
 //        }//++++
 
-     if (c == '32'){
-     if (image.tags.indexOf('32') >= 0 && foundImages < maxImages) {//++++
+     if (c == '30'){
+     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
          }
@@ -69,8 +69,8 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
           //return false;
      }
           
-else if(c == '30'||f == '28'){
-     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
+else if(c == '28'||f == '28'){
+     if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
          }
