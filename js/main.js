@@ -57,19 +57,20 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
          // window.setTimeout(function() {
     filter: function(image) {
         
-     if(c == '37'||f == '37'){if (image.tags.indexOf('37') >= 0 && foundImages < maxImages) {foundImages = foundImages + 1;return true; } return false;
-       }//++++
+//      if(c == '37'||f == '37'){if (image.tags.indexOf('37') >= 0 && foundImages < maxImages) {foundImages = foundImages + 1;return true; } return false;
+//        }//++++
 
-     else (c == '30'){
-     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
+     if (c == '32'){
+     if (image.tags.indexOf('32') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
          }
 //     else 
-          return false;}
+          //return false;
+     }
           
-else if(c == '28'||f == '28'){
-     if (image.tags.indexOf('28') >= 0 && foundImages < maxImages) {//++++
+else if(c == '30'||f == '28'){
+     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
          }
@@ -81,7 +82,8 @@ else if(c == '28'||f == '28'){
 //             foundImages = foundImages + 1;
 //             return true;
 //         }    
-        return false;}                                   
+       // return false;
+}                                   
                                      
      else if(c == '27'||f == '27'){
      if (image.tags.indexOf('27') >= 0 && foundImages < maxImages) {//++++
