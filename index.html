@@ -44,13 +44,55 @@
     <script src="js/main.js"></script>
 
     <title>Current weather in your city | freeCodeCamp project</title>
-	
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="ratchet.css">
+    <link rel="stylesheet" href="styles.css">	
 	
 	
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<button class="btn btn-block" onclick="login()">Login with Instagram</button>
+<hr/>
+
+<p>Username: <span id="username"></span></p>
+<button class="btn btn-block" onclick="getInfo()">Get My Info</button>
+<hr/>
+
+<script src="../instajs.js"></script>
+
+<script>
+
+    instaJS.init('32bccbd4c573430588ebb3c2c3eff33f'); // Defaults to sessionStorage for storing the Facebook token
+
+//  instaJS.init('YOUR_IG_APP_ID', 'http://localhost/openfb/oauthcallback.html', window.localStorage);
+
+    function login() {
+        instaJS.login('basic',
+                function() {
+                    alert('Instagram login succeeded');
+                },
+                function(error) {
+                    alert('Instagram login failed: ' + error.error_description);
+                });
+    }
+
+    function getInfo() {
+        instaJS.api({
+            path: '/users/self',
+            success: function(data) {
+                console.log(JSON.stringify(data));
+                document.getElementById("username").innerHTML = data.username;
+            },
+            error: errorHandler});
+    }
+
+    function errorHandler(error) {
+        alert(error.message);
+    }
+
+</script>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
