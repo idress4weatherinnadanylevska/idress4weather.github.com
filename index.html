@@ -45,7 +45,29 @@
 
     <title>Current weather in your city | freeCodeCamp project</title>
 	
+	<script>
 	
+	<link rel="stylesheet" href="/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/pongstar/pongstagr.am.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+<script src="/bootstrap/boostrap.js"></script>
+<script src="/pongstar/pongstagr.am.js"></script>
+<script>
+$(document).ready(function () {
+ 
+  $('#selector').pongstgrm({
+    accessId:     'ВАШ-ИНСТАГРАМ-ID',
+    accessToken:  'ВАШ-ACCESS-TOKEN'
+  });
+ 
+  $('#selector').pongstgrm({
+    accessId:     'ВАШ-ИНСТАГРАМ-ID',
+    accessToken:  'ВАШ-ACCESS-TOKEN',
+    show: 'recent'
+  });
+ 
+});
+</script>
 	
 </head>
 
@@ -103,15 +125,8 @@
 				    }
 			    </style>
 <div class="instafeed"-->			    
-<div id="instafeed">
-	<!--
-  <a href="..."><img src="..."></a>
-  <a href="..."><img src="..."></a>
-  <a href="..."><img src="..."></a>
-  <a href="..."><img src="..."></a>
--->
-</div><!--/div-->
-<div class="flex-parent">
+<div id="instafeed"></div><!--/div-->
+    <div class="flex-parent">
         <div class="flex-child">
 
             <div id="city">
@@ -130,10 +145,10 @@
             <div id="weather">
                 Sunny
             </div>        
-
+<!--iframe src='/instafeed/index_instafeed.html' scrolling='no' frameborder='no'></iframe-->
         </div>
-    </div>			    
-    
+    </div>
+
 
 
 <a href="#about" class="btn btn-circle page-scroll">
