@@ -47,7 +47,7 @@ userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-//tags: c,            
+tags: c, //  userFeed.tags       
             
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
     success: function() {
@@ -64,20 +64,23 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
         //var image.tags = ['25'];
         //var temperature_c1 = data.current_observation.temp_c1;+++++++++
         //==data.current_observation.temp_c1+++++++++++++++++++++
-      if(c === '25'){
-     if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
-            foundImages = foundImages + 1;
-            return true;
-         }
-//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+          
+          
+//       if(c == '25'){
+//      if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
 //             foundImages = foundImages + 1;
 //             return true;
-//         }
+//          }
+//     else 
+                                     if(image.tags.indexOf(userFeed.tags) >= 0 && foundImages < maxImages) {
+            foundImages = foundImages + 1;
+            return true;
+        }
 //     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
 //             foundImages = foundImages + 1;
 //             return true;
 //         }    
-        return false;}
+        return false;//}
   }  
                                      }, 10000);
 
