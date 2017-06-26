@@ -41,6 +41,14 @@ $(function () {
           $("#weather").html(data.current_observation.weather); 
 
 
+         },
+        cache: false
+      });       
+      
+    });
+  }    
+
+});
           
                  
 //          var c = data.current_observation.temp_c;  
@@ -1913,12 +1921,12 @@ $(function () {
 // }); 
 // userFeed.run(); 
 
-         },
-        cache: false
-      });       
+//          },
+//         cache: false
+//       });       
       
-    });
-  }    
+//     });
+//   }    
 
-});
+// });
 
