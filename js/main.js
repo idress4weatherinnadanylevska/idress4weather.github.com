@@ -40,6 +40,50 @@ $(function () {
 
           $("#weather").html(data.current_observation.weather); 
 
+  var c = data.current_observation.temp_c;   
+        var userFeed = new Instafeed({
+get: 'user',
+userId: '2321088784',
+accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
+    template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+     limit: 60,
+//tags: c,            
+            
+    //data: {access_token: tok, count: kolichestvo},//+++++++++++
+    success: function() {
+        foundImages = 0;
+        maxImages = 5;
+    },
+          //window.setTimeout(function() {
+    filter: function(image) {
+        
+         //return image.tags.indexOf('TAG1') >= 0 && image.tags.indexOf('TAG2') >= 0;
+     //return image.tags.indexOf('25') >= 0;
+        
+       // str.indexOf(searchValue[, fromIndex])
+        //var image.tags = ['25'];
+        //var temperature_c1 = data.current_observation.temp_c1;+++++++++
+        //==data.current_observation.temp_c1+++++++++++++++++++++
+      if(c == '30'){
+     if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
+            foundImages = foundImages + 1;
+            return true;
+         }
+//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }
+//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
+//             foundImages = foundImages + 1;
+//             return true;
+//         }    
+        return false;}
+  }  //filter
+                                  //   }, 10000);
+
+}); 
+userFeed.run();           
+          
         },
         cache: false
       });       
