@@ -1,4 +1,3 @@
-
 $(function () {
   
 // https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/49.5638034,34.4923746.json
@@ -39,13 +38,9 @@ $(function () {
           $( "#icon" ).attr( "src", iconSrc );
 
           $("#weather").html(data.current_observation.weather); 
-
-
-  
           
                  
-         var c = data.current_observation.temp_c;  
-         var f = data.current_observation.temp_f;   
+         var c = data.current_observation.temp_c;   
         var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
@@ -60,8 +55,16 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
         maxImages = 5;
     },
           window.setTimeout(function() {
-    filter: function(image) {//'self',func(immage)??????????????????????
-     if(c == '25'){
+    filter: function(image) {
+        
+         //return image.tags.indexOf('TAG1') >= 0 && image.tags.indexOf('TAG2') >= 0;
+     //return image.tags.indexOf('25') >= 0;
+        
+       // str.indexOf(searchValue[, fromIndex])
+        //var image.tags = ['25'];
+        //var temperature_c1 = data.current_observation.temp_c1;+++++++++
+        //==data.current_observation.temp_c1+++++++++++++++++++++
+      if(c == '25'){
      if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
             foundImages = foundImages + 1;
             return true;
@@ -75,33 +78,18 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 //             return true;
 //         }    
         return false;}
-                                     
-                                     
-                                     
-                                     
-                                     
-   
-                                              
-                                    
-                                            
-
-          
-          
-          
-          
-          
-  }//succ  
+  }  
                                      }, 10000);
 
 }); 
 userFeed.run(); 
 
-       },
+        },
         cache: false
       });       
       
     });
   }    
 
-});
+}); 
 
