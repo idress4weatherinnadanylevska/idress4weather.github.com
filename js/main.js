@@ -66,8 +66,8 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
             return true;
          }
 //     else 
-          //return false;
-     }
+          return false;}
+     
           
 else if(c == '28'||f == '28'){
      if (image.tags.indexOf('25') >= 0 && foundImages < maxImages) {//++++
@@ -82,8 +82,8 @@ else if(c == '28'||f == '28'){
 //             foundImages = foundImages + 1;
 //             return true;
 //         }    
-       // return false;
-}                                   
+       return false;} 
+                                  
                                      
      else if(c == '27'||f == '27'){
      if (image.tags.indexOf('27') >= 0 && foundImages < maxImages) {//++++
