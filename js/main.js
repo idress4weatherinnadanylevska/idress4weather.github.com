@@ -77,21 +77,21 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 
 //   }
       
-      if(c == '30'){
-         if (image.tags.indexOf('30') >= 0 && foundImages < maxImages) {//++++
+      
+      if ((c == '30') && (image.tags.indexOf('30') >= 0 && foundImages < maxImages)) {//++++
             foundImages = foundImages + 1;
             return true;
          }
-//     else if(image.tags.indexOf(tags) >= 0 && foundImages < maxImages) {
-//             foundImages = foundImages + 1;
-//             return true;
-//         }
-//     else if(image.tags.indexOf('25') >= 0 && foundImages < maxImages) {
-//             foundImages = foundImages + 1;
-//             return true;
-//         }    
+         else if((c == '29') && (image.tags.indexOf('29') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((c == '28') && (image.tags.indexOf('28') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }    
         return false;
-      }
+      
   }  //filter
                                   //   }, 10000);
 
