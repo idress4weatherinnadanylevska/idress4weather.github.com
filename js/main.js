@@ -39,9 +39,10 @@ $(function () {
           $( "#icon" ).attr( "src", iconSrc );
 
           $("#weather").html(data.current_observation.weather); 
-
-  var c = data.current_observation.temp_c;   
-        var userFeed = new Instafeed({
+          
+var f = data.current_observation.temp_f;
+var c = data.current_observation.temp_c;   
+var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
@@ -59,18 +60,50 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
 
       
       
-      if ((c == '30') && (image.tags.indexOf('30') >= 0 && foundImages < maxImages)) {//++++
+      if ((c == '30'|| f == '30') && (image.tags.indexOf('30') >= 0 && foundImages < maxImages)) {//++++
             foundImages = foundImages + 1;
             return true;
          }
-         else if((c == '29') && (image.tags.indexOf('29') >= 0 && foundImages < maxImages)) {
+         else if((c == '29'|| f == '29') && (image.tags.indexOf('29') >= 0 && foundImages < maxImages)) {
             foundImages = foundImages + 1;
             return true;
          }
-         else if((c == '28') && (image.tags.indexOf('28') >= 0 && foundImages < maxImages)) {
+         else if((c == '28'|| f == '28') && (image.tags.indexOf('28') >= 0 && foundImages < maxImages)) {
             foundImages = foundImages + 1;
             return true;
-         }    
+         }  
+               else if((c == '27'|| f == '27') && (image.tags.indexOf('27') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((c == '26'|| f == '26') && (image.tags.indexOf('26') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if((c == '25'|| f == '25') && (image.tags.indexOf('25') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((c == '24'|| f == '24') && (image.tags.indexOf('24') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if((c == '23'|| f == '23') && (image.tags.indexOf('23') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((c == '22'|| f == '22') && (image.tags.indexOf('22') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if((c == '21'|| f == '21') && (image.tags.indexOf('21') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((c == '20'|| f == '20') && (image.tags.indexOf('20') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
         return false;
      
  }  //filter
