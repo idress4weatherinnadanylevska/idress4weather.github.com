@@ -46,8 +46,9 @@ var userFeed = new Instafeed({
 get: 'user',
 userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
-    template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+    //template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
+   template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>',
 //tags: c,            
     //template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>',
         
