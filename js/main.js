@@ -49,7 +49,7 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
 //tags: c,            
-    template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>',
+    //template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>',
         
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
     success: function() {
