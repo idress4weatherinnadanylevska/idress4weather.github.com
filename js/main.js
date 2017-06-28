@@ -48,7 +48,7 @@ userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     //template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-   template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>',
+   //template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>',
 //tags: c,            
     //template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>',
         
@@ -61,7 +61,192 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     filter: function(image) {
 
       
-      if((c == '40'|| f == '40') && (image.tags.indexOf('40') >= 0 && foundImages < maxImages)) {
+      if(( f == '86') && (image.tags.indexOf('86') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+       
+         else if(( f == '85') && (image.tags.indexOf('85') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '84') && (image.tags.indexOf('84') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '83') && (image.tags.indexOf('83') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '82') && (image.tags.indexOf('82') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '81') && (image.tags.indexOf('81') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((f == '80') && (image.tags.indexOf('80') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+      else if(( f == '79') && (image.tags.indexOf('79') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '78') && (image.tags.indexOf('78') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }  
+               else if((f == '77') && (image.tags.indexOf('77') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '6') && (image.tags.indexOf('76') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '75') && (image.tags.indexOf('75') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '74') && (image.tags.indexOf('74') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '73') && (image.tags.indexOf('73') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '72') && (image.tags.indexOf('72') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '71') && (image.tags.indexOf('71') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '70') && (image.tags.indexOf('70') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+      else if(( f == '69') && (image.tags.indexOf('69') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '68') && (image.tags.indexOf('68') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }  
+               else if((f == '67') && (image.tags.indexOf('67') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '66') && (image.tags.indexOf('66') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '65') && (image.tags.indexOf('65') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '64') && (image.tags.indexOf('64') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '63') && (image.tags.indexOf('63') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '62') && (image.tags.indexOf('62') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '61') && (image.tags.indexOf('61') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '60') && (image.tags.indexOf('60') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+      else if(( f == '59') && (image.tags.indexOf('59') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '58') && (image.tags.indexOf('58') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }  
+               else if((f == '57') && (image.tags.indexOf('57') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '56') && (image.tags.indexOf('56') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '55') && (image.tags.indexOf('55') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '54') && (image.tags.indexOf('54') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '53') && (image.tags.indexOf('53') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '52') && (image.tags.indexOf('52') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '51') && (image.tags.indexOf('51') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '50') && (image.tags.indexOf('50') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+      else if(( f == '49') && (image.tags.indexOf('49') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '48') && (image.tags.indexOf('48') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }  
+               else if((f == '47') && (image.tags.indexOf('47') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '46') && (image.tags.indexOf('46') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '45') && (image.tags.indexOf('45') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '44') && (image.tags.indexOf('44') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '43') && (image.tags.indexOf('43') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if(( f == '42') && (image.tags.indexOf('42') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         } 
+               else if(( f == '41') && (image.tags.indexOf('41') >= 0 && foundImages < maxImages)) {
+            foundImages = foundImages + 1;
+            return true;
+         }
+         else if((c == '40'|| f == '40') && (image.tags.indexOf('40') >= 0 && foundImages < maxImages)) {
             foundImages = foundImages + 1;
             return true;
          }
