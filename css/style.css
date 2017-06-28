@@ -4,7 +4,7 @@
 /*
 * Override Bootstrap variables
 */
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6840,7 +6840,7 @@ header .social a.instagram {
   background: black;
   background: rgba(0, 0, 0, 0.4);
   color: white;
-}
+}*/
 .instagram-content .photo-box .description {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
