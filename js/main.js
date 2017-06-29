@@ -39,8 +39,15 @@ $(function () {
           $( "#icon" ).attr( "src", iconSrc );
 
           $("#weather").html(data.current_observation.weather); 
- 
-          
+
+        },
+        cache: false
+      });       
+      
+    });
+  }    
+
+});
           
 // var f = data.current_observation.temp_f;
 // var c = data.current_observation.temp_c;   
@@ -561,12 +568,12 @@ $(function () {
 //         });
 // userFeed.run();           
           
-        },
-        cache: false
-      });       
+//         },
+//         cache: false
+//       });       
       
-    });
-  }    
+//     });
+//   }    
 
-});
+// });
 
