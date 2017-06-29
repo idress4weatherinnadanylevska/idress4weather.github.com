@@ -51,7 +51,7 @@ userId: '2321088784',
 accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     //template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
-   template: '<a class="fancybox" rel="instagram" href="{{image}}"><img src="{{image}}" /></a>',
+   template: '<a class="fancybox" rel="instagram" href="{{link}}"target="_blank"><img src="{{image}}" /></a>',
   
    //template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>',
 //tags: c,            
