@@ -42,8 +42,7 @@ $(function () {
 
         var f = data.current_observation.temp_f;
 var c = data.current_observation.temp_c;   
-          
-      // var nextButton = document.getElementById('next-button');    
+        var nextButton = document.getElementById('next-button');    
           
 var userFeed = new Instafeed({
   //https://api.instagram.com/v1/users/self/media/liked?access_token=ACCESS-TOKEN
@@ -61,12 +60,12 @@ accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
     //data: {access_token: tok, count: kolichestvo},//+++++++++++
 
                   // every time we load more, run this function
-//         after: function() {
-//             // disable button if no more results to load
-//             if (!this.hasNext()) {
-//                 nextButton.setAttribute('disabled', 'disabled');
-//             }               
-//         },
+        after: function() {
+            // disable button if no more results to load
+            if (!this.hasNext()) {
+                nextButton.setAttribute('disabled', 'disabled');
+            }               
+        },
           
           
           
