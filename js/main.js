@@ -10,9 +10,9 @@ $(function () {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
       
-      url = 'https://api.wunderground.com/api/7f0451b8da14a202/conditions/forecast/q/' + coordinates + '.json'     
+      url = 'https://api.wunderground.com/api/d0f4f1d458956cde/conditions/forecast/q/' + coordinates + '.json'     
       
-      // send request to the weather server
+      // send request to the weather server 7f0451b8da14a202
       $.ajax( {
         url: url,
         success: function(data) {
