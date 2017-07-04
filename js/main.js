@@ -47,8 +47,8 @@ var c = data.current_observation.temp_c;
 var userFeed = new Instafeed({
   //https://api.instagram.com/v1/users/self/media/liked?access_token=ACCESS-TOKEN
 get: 'user',
-userId: '2321088784',
-accessToken: '2321088784.1677ed0.bde13057fffd4b30aad200715ee85b61',
+userId: '5679701317',
+accessToken: '5679701317.8f4c5bf.69b3f2c784fe48df9aa9912635f1ffe0',
     //template: '<a href="{{link}}"><img src="{{image}}" /></a>',
      limit: 60,
    template: '<a class="fancybox" rel="instagram" href="{{link}}"target="_blank"><img src="{{image}}" /></a>',
