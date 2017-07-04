@@ -376,6 +376,30 @@ function onPlayerStateChange() {
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
+	
+	
+	
+	<div class="videoWrapper">
+    <!-- Copy & Pasted from YouTube -->
+<section id="player" class="container content-section text-center"><iframe id="player" width="400" height="300" src="https://www.youtube.com/embed/watch?v=MIKkAfmY4KE?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+	<!--enablejsapi=1; autoplay=1 &origin=https://example.com"		
+    <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+--></section>
+	</div>
+	
+	.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 	<script>
 	// Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
