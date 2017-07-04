@@ -119,6 +119,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#city">Weather</a>
+                    </li>
+			
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
@@ -196,7 +200,7 @@ margin-top: 60px;
         </div>
     </section-->
 			    
-				<a href="#about" class="btn btn-circle page-scroll">
+				<a href="#city" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
     <div class="flex-parent">
@@ -222,7 +226,10 @@ margin-top: 60px;
         </div>
     </div>
 
-
+			    
+				<a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -311,8 +318,22 @@ margin-top: 60px;
         </div>
     </section>
 <!-- Youtube Section -->
-    <div id="player"></div>
-	
+    <div id="player"><iframe id="player" src="https://www.youtube.com/embed/watch?v=MIKkAfmY4KE?enablejsapi=1; autoplay=1 &origin=https://example.com" frameborder="0"></iframe></div>
+<!--div id="player"><iframe id="player" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&; autoplay=1 &origin=example.com " frameborder="0"></iframe></div ////youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com-->
+	<script>
+		var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    events: {
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerStateChange() {
+  //...
+}
+	</script>
 
     <!-- Map Section -->
     <div id="map"></div>
