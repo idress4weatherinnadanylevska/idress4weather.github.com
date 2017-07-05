@@ -330,7 +330,9 @@ margin-top: 60px;
 <!-- Youtube Section -->
 
      	
-    <section id="player" class="container content-section text-center"><iframe id="player" width="400" height="300" src="https://youtu.be/MIKkAfmY4KE?enablejsapi=1; autoplay=1 &origin=https://example.com" frameborder="0"></iframe></div>
+    <section id="player" class="container content-section text-center"><iframe width="640" height="360" src="https://www.youtube.com/embed/MIKkAfmY4KE?enablejsapi=1; autoplay=1 &origin=https://example.com" frameborder="0" allowfullscreen></iframe>	
+
+	    <!--iframe id="player" width="400" height="300" src="https://youtu.be/MIKkAfmY4KE?enablejsapi=1; autoplay=1 &origin=https://example.com" frameborder="0"></iframe></div>
 <!--div id="player"><iframe id="player" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&; autoplay=1 &origin=example.com " frameborder="0"></iframe></div ////youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com-->
 	<div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -383,70 +385,11 @@ function onPlayerStateChange() {
 	
 	
 	
-	<div class="videoWrapper">
-    <!-- Copy & Pasted from YouTube -->
-<section id="player" class="container content-section text-center"><iframe id="player" width="400" height="300" src="https://www.youtube.com/embed/watch?v=MIKkAfmY4KE?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
-	<!--enablejsapi=1; autoplay=1 &origin=https://example.com"		
-    <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
---></section>
-	</div>
-	
-	.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-	<script>
-jQuery{(		
-	// Find all YouTube videos
-var $allVideos = $("iframe[src^='//www.youtube.com']"),
-
-    // The element that is fluid width
-    $fluidEl = $("body");
-
-// Figure out and save aspect ratio for each video
-$allVideos.each(function() {
-
-  $(this)
-    .data('aspectRatio', this.height / this.width)
-
-    // and remove the hard coded width/height
-    .removeAttr('height')
-    .removeAttr('width');
-
-});
-
-// When the window is resized
-$(window).resize(function() {
-
-  var newWidth = $fluidEl.width();
-
-  // Resize all videos according to their own aspect ratio
-  $allVideos.each(function() {
-
-    var $el = $(this);
-    $el
-      .width(newWidth)
-      .height(newWidth * $el.data('aspectRatio'));
-
-  });
-
-// Kick off one resize to fix all videos on page load
-}).resize();
-		})
-	</script>
 
 
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/MIKkAfmY4KE" frameborder="0" allowfullscreen></iframe>	
+
+
 
 </body>
 
