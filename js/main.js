@@ -10,8 +10,8 @@ $(function () {
     navigator.geolocation.getCurrentPosition(function(position) {
       coordinates+=position.coords.latitude + ',' + position.coords.longitude;
       
-      //url = 'https://api.wunderground.com/api/d0f4f1d458956cde/conditions/forecast/q/' + coordinates + '.json'     
-      url = 'http://api.worldweatheronline.com/free/v1/tz.ashx?key=be16af77276f4dd98e4132633170507&format=json&q=';
+      url = 'https://api.wunderground.com/api/d0f4f1d458956cde/conditions/forecast/q/' + coordinates + '.json'     
+      //url = 'http://api.worldweatheronline.com/free/v1/tz.ashx?key=be16af77276f4dd98e4132633170507&format=json&q=';
       // send request to the weather server 7f0451b8da14a202   
       $.ajax( {
         url: url,
