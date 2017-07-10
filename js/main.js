@@ -62,8 +62,7 @@ accessToken: '5679701317.8f4c5bf.69b3f2c784fe48df9aa9912635f1ffe0',
                   // every time we load more, run this function
         after: function() {
             // disable button if no more results to load
-            if (!this.hasNext()) {
-                nextButton.setAttribute('disabled', 'disabled');
+            
                   $(".instagram-image").each(function (i) {
         if(i >= 60) {
             $(this).remove();
