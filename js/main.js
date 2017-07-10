@@ -66,7 +66,11 @@ accessToken: '5679701317.8f4c5bf.69b3f2c784fe48df9aa9912635f1ffe0',
                 nextButton.setAttribute('disabled', 'disabled');
             }               
         },
-          
+         after: function () {
+    $(".instagram-image").each(function (i) {
+        if(i >= 60) {
+            $(this).remove();
+        }, 
           
           
           
